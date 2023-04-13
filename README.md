@@ -1,4 +1,4 @@
-# Diabetes_Prediction
+# Diabetes Prediction with Machine Learning
 
 <img width="632" alt="Screenshot 2023-04-13 at 7 03 57 PM" src="https://user-images.githubusercontent.com/106120403/231901475-2b87a3eb-d90d-414c-8e99-1ed37a0095bf.png">
 
