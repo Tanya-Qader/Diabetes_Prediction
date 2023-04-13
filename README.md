@@ -15,7 +15,7 @@ https://www.kaggle.com/datasets/alexteboul/diabetes-health-indicators-dataset
 4. Can the machine learning model be used to identify potential risk factors for diabetes and pre-diabetes, and how can this information be used to improve clinical interventions and patient outcomes?
 
 ### ETL
-
+Cleaned the data. Used python to extract, transform and load the data.
 
 ### Feature Engineering
 
