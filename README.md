@@ -14,4 +14,19 @@ https://www.kaggle.com/datasets/alexteboul/diabetes-health-indicators-dataset
 3. Can specific subgroups within the population (e.g., age, BMI, physical activity, etc.) be identified and addressed in order to improve the model's performance overall?
 4. Can the machine learning model be used to identify potential risk factors for diabetes and pre-diabetes, and how can this information be used to improve clinical interventions and patient outcomes?
 
+### ETL
+
+
+### Feature Engineering
+
+
+### Machine Learning
+
+
+### Link to the Project Presentation PowerPoint
+
+
+### Link to the Dashboard
+
+
 
