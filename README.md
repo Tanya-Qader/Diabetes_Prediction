@@ -21,8 +21,20 @@ To get started, we downloaded the data from the BRFSS Annual Survey Data page, c
 #### Cleaning BRFSS data											
 After reading the SAS file and creating our DataFrame, we note that the BRFSS data is not useful right out of the box. We have to do some heavy-duty cleaning.  The 2021 data set includes 438693 rows and 303 columns.  
 
-### Feature Engineering
+### Feature Engineering										
+Producing accurate predictions is the goal of a machine learning algorithm, and feature engineering ties it all together. Feature engineering includes everything from filling in missing values to variable transformation to building new variables from existing ones.
 
+A review of the data shows a significant number of null values in several columns.  The reality is that real-world data is rarely clean and homogeneous. In particular, many interesting datasets will have some amount of data missing.  The first part of feature engineering is handling missing values.
+
+The simplest option is removing any rows or columns with missing values.  Removing any rows with null values would essentially eliminate the entire data set.  Removing columns with null values reduces our data set from 303 columns to less than 30!   More importantly, removing such a significant proportion of our dataset may result in a biased model that will lead to incorrect results, reduced accuracy, and less predictive precision. 
+
+There are mainly three types of missing values: 
+
+MCAR (Missing Completly At Random): A variable is missing completely at random if the probability of being missing is the same for all the observations. MCAR data means there is absolutely no relationship between the data missing and any other observed or missing value in the dataset. In other words, those missing data points are a random subset of the dataset.
+MNAR (Missing Data Not At Random): As the name suggests, there will be some relationship between the data missing and any other value in the dataset.
+MAR(Missing At Random): Missing at Random means the propensity for a data point to be missing is not related to the missing data, but it is related to some of the observed data
+
+Our missing values are of the MCAR type, which is typical of survey results.  Random Sample Imputation is used when data are MCAR. In this technique, NaN values are replaced by a random value (ie. mean, median, mode) selected from that column.  The advantages of using Random Sample imputation include that it is easy to implement and there is less resulting distortion in variance.  The main disadvantage is that there may be some situations randomness won't work.  However, in the case of our dataset, it is likely the most appropriate option. A common method of random sample imputation with numeric features is to replace missing values with the median of the feature’s non-missing values. 
 
 ### Machine Learning
 
