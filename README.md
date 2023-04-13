@@ -14,14 +14,14 @@ https://www.kaggle.com/datasets/alexteboul/diabetes-health-indicators-dataset
 3. Can specific subgroups within the population (e.g., age, BMI, physical activity, etc.) be identified and addressed in order to improve the model's performance overall?
 4. Can the machine learning model be used to identify potential risk factors for diabetes and pre-diabetes, and how can this information be used to improve clinical interventions and patient outcomes?
 
-### ETL
+# ETL
 #### Getting BRFSS data												
 To get started, we downloaded the data from the BRFSS Annual Survey Data page, choosing the most recent data set from 2021. The data is available in .XPT (SAS Transport Format) or in .ASCII files.   
 
 #### Cleaning BRFSS data											
 After reading the SAS file and creating our DataFrame, we note that the BRFSS data is not useful right out of the box. We have to do some heavy-duty cleaning.  The 2021 data set includes 438693 rows and 303 columns.  
 
-### Feature Engineering										
+# Feature Engineering										
 Producing accurate predictions is the goal of a machine learning algorithm, and feature engineering ties it all together. Feature engineering includes everything from filling in missing values to variable transformation to building new variables from existing ones.
 
 A review of the data shows a significant number of null values in several columns.  The reality is that real-world data is rarely clean and homogeneous. In particular, many interesting datasets will have some amount of data missing.  The first part of feature engineering is handling missing values.
@@ -36,17 +36,17 @@ MAR(Missing At Random): Missing at Random means the propensity for a data point 
 
 Our missing values are of the MCAR type, which is typical of survey results.  Random Sample Imputation is used when data are MCAR. In this technique, NaN values are replaced by a random value (ie. mean, median, mode) selected from that column.  The advantages of using Random Sample imputation include that it is easy to implement and there is less resulting distortion in variance.  The main disadvantage is that there may be some situations randomness won't work.  However, in the case of our dataset, it is likely the most appropriate option. A common method of random sample imputation with numeric features is to replace missing values with the median of the feature’s non-missing values. 
 
-### Link to Tableau to further show the relationship between Diabetes and the features
+# Link to Tableau to further show the relationship between Diabetes and the features
 
 https://public.tableau.com/app/profile/mojtaba.zadaskar/viz/shared/W3CCWYNDB
 
-### Machine Learning
+# Machine Learning
 
 
-### Link to the Project Presentation PowerPoint
+# Link to the Project Presentation PowerPoint
 
 
-### Link to the Dashboard
+# Link to the Dashboard
 
 
 
