@@ -2,7 +2,17 @@
 
 <img width="632" alt="Screenshot 2023-04-13 at 7 03 57 PM" src="https://user-images.githubusercontent.com/106120403/231901475-2b87a3eb-d90d-414c-8e99-1ed37a0095bf.png">
 
-In today’s world, it is important to understand your overall health and be able to make predictions about health issues such as diabetes, high blood pressure, and cholesterol levels. We will be using Machine Learning to predict whether an individual has diabetes, is prediabetic or would most likely not have diabetes. We will use information such as the person’s age, BMI, activity levels etc. 
+In today’s world, it is important to understand your overall health and be able to make predictions about health issues such as diabetes, high blood pressure, and cholesterol levels. We will be using Machine Learning to predict whether an individual has diabetes or not have diabetes. We will use information such as the person’s age, BMI, activity levels etc.
+
+# Introduction											
+Every year since 1984, the CDC has conducted a detailed survey on people’s health and what they're doing about it. The CDC's Behavioral Risk Factor Surveillance System (BRFSS) provides a wealth of information about health and health-related behaviours in the United States. It is the largest and longest-running health survey system in the world, and in its current incarnation, it covers over 400,000 adult interviews from all 50 states, the District of Columbia, and three territories. For more information about the survey itself, you can visit the CDC BRFSS site.
+
+The BRFSS is a rich source of information on how demographics, behaviours, and other risk factors can correlate with health. Many important population health studies and measures use the BRFSS as a key data source. For example, it is the source of the CDC's "Healthy Days" measurement, a key performance metric for the healthcare industry.
+
+Unfortunately, BRFSS data isn't exactly easy to deal with. Its breadth and structure have changed considerably over the years, and there are important sampling considerations that must be taken into account when using the data to draw conclusions. 
+
+The goal of this project is to demonstrate how to use BRFSS data and some of the interesting correlations and associations that can be drawn from this data set using machine learning and statistical techniques to develop a machine learning model to predict a diagnosis of diabetes.
+
 
 ### Dataset
 https://www.kaggle.com/datasets/alexteboul/diabetes-health-indicators-dataset
