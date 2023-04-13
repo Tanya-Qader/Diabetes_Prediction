@@ -1,6 +1,6 @@
 # Diabetes_Prediction
 
-<img width="632" alt="Screenshot 2023-04-13 at 7 01 43 PM" src="https://user-images.githubusercontent.com/106120403/231901141-6d12b2e0-5143-479d-a081-1ebb9417eb9e.png">
+<img width="632" alt="Screenshot 2023-04-13 at 7 03 57 PM" src="https://user-images.githubusercontent.com/106120403/231901475-2b87a3eb-d90d-414c-8e99-1ed37a0095bf.png">
 
 In today’s world, it is important to understand your overall health and be able to make predictions about health issues such as diabetes, high blood pressure, and cholesterol levels. We will be using Machine Learning to predict whether an individual has diabetes, is prediabetic or would most likely not have diabetes. We will use information such as the person’s age, BMI, activity levels etc. 
 
