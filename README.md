@@ -15,7 +15,11 @@ https://www.kaggle.com/datasets/alexteboul/diabetes-health-indicators-dataset
 4. Can the machine learning model be used to identify potential risk factors for diabetes and pre-diabetes, and how can this information be used to improve clinical interventions and patient outcomes?
 
 ### ETL
-Cleaned the data. Used python to extract, transform and load the data.
+#### Getting BRFSS data												
+To get started, we downloaded the data from the BRFSS Annual Survey Data page, choosing the most recent data set from 2021. The data is available in .XPT (SAS Transport Format) or in .ASCII files.   
+
+#### Cleaning BRFSS data											
+After reading the SAS file and creating our DataFrame, we note that the BRFSS data is not useful right out of the box. We have to do some heavy-duty cleaning.  The 2021 data set includes 438693 rows and 303 columns.  
 
 ### Feature Engineering
 
