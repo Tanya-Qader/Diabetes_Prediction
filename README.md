@@ -38,6 +38,7 @@ Our missing values are of the MCAR type, which is typical of survey results.  Ra
 
 ### Link to Tableau to further show the relationship between Diabetes and the features
 
+https://public.tableau.com/app/profile/mojtaba.zadaskar/viz/shared/W3CCWYNDB
 
 ### Machine Learning
 
