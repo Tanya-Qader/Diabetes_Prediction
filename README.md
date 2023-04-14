@@ -58,5 +58,7 @@ https://docs.google.com/presentation/d/1nJfHPKCkun8DwB0rf1wpg2-oRUV2X6lfABWPmvSf
 
 # Link to the Dashboard
 
+https://tanya-qader.github.io/diabetes_page/
+
 
 
