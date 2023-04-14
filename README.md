@@ -54,6 +54,7 @@ https://public.tableau.com/app/profile/mojtaba.zadaskar/viz/shared/W3CCWYNDB
 
 # Link to the Project Presentation PowerPoint
 
+https://docs.google.com/presentation/d/1nJfHPKCkun8DwB0rf1wpg2-oRUV2X6lfABWPmvSfT5s/edit#slide=id.g962c8e87bf_0_0
 
 # Link to the Dashboard
 
