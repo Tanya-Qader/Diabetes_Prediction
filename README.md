@@ -105,6 +105,7 @@ A comparison of all three scalers with a copy of our DataFrame, swayed the choic
 We initiated our maching learning with Logistic Regression, Decision Tree, KNN and Random Forest.
 
 ***Logistic Regression***: Logistic regression is an example of supervised learning. It is used to calculate or predict the probability of a binary (yes/no) event occurring.
+
 <img width="425" alt="Screenshot 2023-04-16 at 8 38 18 PM" src="https://user-images.githubusercontent.com/115101031/232353369-3a56386b-cc24-4462-8eae-ae48e886a3c0.png">
 
 While the precision, recall and f1-score are high for healthy individuals, those for individuals with diabetes are less than ideal.  Though the model accuracy is high (87%), it may be highly influenced by the fact that healthy individuals outnumber those with diabetes.  As a result, the false negatives (individuals misdiagnosed as healthy = 850) is unacceptably high.
