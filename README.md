@@ -81,8 +81,24 @@ Our goal was to define those features which would work best in training our mode
 
 # Machine Learning
 
+After reading in our CSV file, we set about exploring our dataset before laungching manchine learning.  Visualizing a correlation of our narrowed features with diabetes, we made the decision to drop "Afford Costs" given that it showed to be a very weak correlator.
+<img width="765" alt="Screenshot 2023-04-16 at 8 21 45 PM" src="https://user-images.githubusercontent.com/115101031/232352373-fd46ff63-05d2-4fa1-9438-d3d171120f03.png">
 
+Reviewing histograms of each feature showed that the data was not normally distributed.
+<img width="803" alt="Screenshot 2023-04-16 at 8 24 46 PM" src="https://user-images.githubusercontent.com/115101031/232352563-39e0cff8-c0b0-4674-a3d7-56be29478964.png">
 
+This was confirmed by also reviewing the skewness of our data (df.skew).  As such, we needed to consider options to scale our data prior to runnung our maching learning models.  Data scaling is a method for reducing the effect of data bias on predictions which is highly used in pre-processing step in any Machine Learning project. It can be applied to any type of prediction model.  We focussed our options on three of the most popular scalers:
+
+<img width="436" alt="Screenshot 2023-04-16 at 8 30 22 PM" src="https://user-images.githubusercontent.com/115101031/232352866-ebd1a015-d2ec-4a1d-8dce-6dc708c51b28.png">
+
+***StandardScaler*** is a fast and specialized algorithm for scaling data. It calculates the mean and standard deviation of the data set and normalizes it by subtracting the mean and dividing by standard deviation. Using StandardScaler is a common practice in ML projects if the data set follows a normal distribution.  
+***MinMaxScaler*** is a simple and effective linear scaling function. It scales the data set between 0 and 1. In other words, the minimum and maximum values in the scaled data set are 0 and 1 respectively. MinMax Scaler is often used as an alternative to Standard Scaler if zero mean and unit variance want to be avoided. 
+***RobustScaler*** is a technique that uses median and quartiles to tackle the biases rooting from outliers. Instead of removing mean, RobustScaler removes median and scales the data according to the quantile range aka IQR: Interquartile Range.
+
+A comparison of all three scalers with a copy of our DataFrame, swayed the choice towards the MinMaxScaler as it will likely best address a dataset that is not normally distributed/skewed.
+<img width="217" alt="Screenshot 2023-04-16 at 8 30 32 PM" src="https://user-images.githubusercontent.com/115101031/232352874-e9ca8683-25a6-4334-80b7-4e36c148bae3.png">
+
+We initiated our maching learning with Logistic Regression, Decision Tree, KNN and Random Forest.
 
 # Additional Supporting Content
 
@@ -96,9 +112,8 @@ Our goal was to define those features which would work best in training our mode
 * https://tanya-qader.github.io/diabetes_page/
 
 ***Knowledgebase - Additional Sources***
-* https://www.cdc.gov/pcd/issues/2019/19_0109.htm {2}
 * https://www.sciencedirect.com/science/article/pii/S2772442522000582#da1 {1}
+* https://www.cdc.gov/pcd/issues/2019/19_0109.htm {2}
 * https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9018179/
 * https://www.researchgate.net/publication/366621858_Risk_Factor_Analysis_Associated_with_BRFSS_dataset
-* https://www.sciencedirect.com/topics/engineering/confusion-matrix#:~:text=A%20confusion%20matrix%20is%20a,malignant%20tissue%20is%20considered%20cancerous
 
