@@ -14,7 +14,7 @@ The goal of this project is to demonstrate how to use BRFSS data and some of the
 In today’s world, it is important to understand your overall health and be able to make predictions about health issues such as diabetes, high blood pressure, and cholesterol levels. We will be using Machine Learning to predict whether an individual has diabetes or not have diabetes. We will use information such as the person’s age, BMI, activity levels etc.
 
 ### Dataset
-https://www.kaggle.com/datasets/alexteboul/diabetes-health-indicators-dataset
+https://www.cdc.gov/brfss/annual_data/annual_2021.html
 
 ### Research Questions:
 
@@ -91,5 +91,10 @@ https://docs.google.com/presentation/d/1f4IErv21VkdBfn4Hmy-l7u7yjIzmLlKGUOm07Lc4
 #### Link to the Dashboard
 https://tanya-qader.github.io/diabetes_page/
 
-
+# Additional Sources
+* https://www.cdc.gov/pcd/issues/2019/19_0109.htm
+* https://www.sciencedirect.com/science/article/pii/S2772442522000582#da1
+* https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9018179/
+* https://www.researchgate.net/publication/366621858_Risk_Factor_Analysis_Associated_with_BRFSS_dataset
+* https://www.sciencedirect.com/topics/engineering/confusion-matrix#:~:text=A%20confusion%20matrix%20is%20a,malignant%20tissue%20is%20considered%20cancerous
 
