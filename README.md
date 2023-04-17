@@ -1,6 +1,14 @@
-# Diabetes Prediction with Machine Learning
+# Diabetes_Prediction - Team Project 4
 
 <img width="632" alt="Screenshot 2023-04-13 at 7 03 57 PM" src="https://user-images.githubusercontent.com/106120403/231901475-2b87a3eb-d90d-414c-8e99-1ed37a0095bf.png">
+
+## Team Members: 
+    Tanya Qader
+    Oseremeh Okpamen
+    Michelle Carvalho
+    Mojtaba Zadaskar 
+  
+  
 
 # Introduction											
 As one of the most common diseases in the world, diabetes mellitus affects 37.3 million Americans in 2019 or 11.3% of the country’s population. The proportion of diabetes-related deaths in the US is estimated to be between 11.5% and 12%. Diabetes was diagnosed in 537 million individuals globally in 2021; by 2045, that figure is projected to rise to 783 million. Diabetes also has a significant economic impact, with estimated annual expenditures for direct costs relating to diabetes increasing from $966 billion in 2021 to a projected value in excess of over $1 trillion in 2045. In the US, spending on diabetes care and management makes up roughly 25% of all healthcare spending. The effective management of diabetes is crucial to prevent additional complications, such as eye, foot, and mouth problems, kidney disease and even certain cancers. Additionally, it is also estimated that half of all people affected by diabetes are undiagnosed. Like other diseases, one of the best ways to effectively manage diabetes lies in diagnosing the disease early before the effects become more serious.{1}
@@ -134,11 +142,66 @@ Our accuracy, precision, recall and f1-score are consistent with the prior model
 
 Random Forest provides a consistent result with earlier models, but does offer a slightly improved/reduced false negatives.
 
+# Visualzations 
+####  Tableau for visualization 
+      Used several indictors to compare the difference between the Diabetes and No Diabetes,
+      
+      Indicators are :
+      1. Drink
+      
+<img width="600" alt="Drink Vs Diabetes" src="https://github.com/Tanya-Qader/Diabetes_Prediction/blob/Mojtaba/Images/Drink%20VsDiabetes.png">
 
+      2. Gender 
+<img width="600" alt="Drink Vs Diabetes" src="https://github.com/Tanya-Qader/Diabetes_Prediction/blob/Mojtaba/Images/GenderVs%20Diabetes.png">
+
+      3. Ethnicity
+<img width="600" alt="Drink Vs Diabetes" src="https://github.com/Tanya-Qader/Diabetes_Prediction/blob/Mojtaba/Images/EthnicityVsDiabetes.png">
+      
+      4. Kidney and Lung Disease
+<img width="600" alt="Drink Vs Diabetes" src="https://github.com/Tanya-Qader/Diabetes_Prediction/blob/Mojtaba/Images/Kidney%20%26%20Lung%20Vs%20Diabetes.png">      
+      
+      5. Heart Problems
+<img width="600" alt="Drink Vs Diabetes" src="https://github.com/Tanya-Qader/Diabetes_Prediction/blob/Mojtaba/Images/Heart%20Disease%26heart%20AttackVs%20Diabetes.png">
+
+      6. Income
+<img width="600" alt="Drink Vs Diabetes" src="https://github.com/Tanya-Qader/Diabetes_Prediction/blob/Mojtaba/Images/IncomeVs%20Diabetes.png">
+      
+      7. Pyhsical Activity
+      8. Exercise 30 days 
+     
+
+ ## Tableau Public Link:
+ 
+* https://public.tableau.com/views/Project4-dataset2021/Diabetes?:language=en-US&publish=yes&:display_count=n&:origin=viz_share_link
+
+ # Dashboard 
+ #### streamLit
+      
+      Used stream lit to create a dashboard , with the use of ML and based on the questions that the client will respond ,
+      the system could predict, is he/she diabetes or no diabetes.
+
+   First screenshot:
+<img width="600" alt="Drink Vs Diabetes" src="https://github.com/Tanya-Qader/Diabetes_Prediction/blob/Mojtaba/Images/dashboard%20picture.PNG">
+
+   Second screenshot:
+<img width="600" alt="Drink Vs Diabetes" src="https://github.com/Tanya-Qader/Diabetes_Prediction/blob/Mojtaba/Images/dashboard%20picture2.PNG">
+
+    Third screenshot:
+<img width="600" alt="Drink Vs Diabetes" src="https://github.com/Tanya-Qader/Diabetes_Prediction/blob/Mojtaba/Images/dashboard%20picture3.PNG">
+
+
+    Fourth screenshot:
+<img width="600" alt="Drink Vs Diabetes" src="https://github.com/Tanya-Qader/Diabetes_Prediction/blob/Mojtaba/Images/dashboard%20picture4.PNG">
+
+
+    Fifth  screenshot:
+<img width="600" alt="Drink Vs Diabetes" src="https://github.com/Tanya-Qader/Diabetes_Prediction/blob/Mojtaba/Images/dashboard%20picture5.PNG">
+
+   
 # Additional Supporting Content
 
 ***Link to Tableau to further show the relationship between Diabetes and the features***
-* https://public.tableau.com/app/profile/mojtaba.zadaskar/viz/shared/W3CCWYNDB
+* https://public.tableau.com/views/Project4-dataset2021/Diabetes?:language=en-US&publish=yes&:display_count=n&:origin=viz_share_link
 
 ***Link to the Project Presentation PowerPoint***
 * https://docs.google.com/presentation/d/1f4IErv21VkdBfn4Hmy-l7u7yjIzmLlKGUOm07Lc417k/edit#slide=id.g11d335f8426_1_172
@@ -151,4 +214,3 @@ Random Forest provides a consistent result with earlier models, but does offer a
 * https://www.cdc.gov/pcd/issues/2019/19_0109.htm {2}
 * https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9018179/
 * https://www.researchgate.net/publication/366621858_Risk_Factor_Analysis_Associated_with_BRFSS_dataset
-
