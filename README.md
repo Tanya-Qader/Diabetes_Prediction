@@ -30,7 +30,7 @@ To get started, we downloaded the data from the BRFSS Annual Survey Data page, c
 #### Cleaning BRFSS data											
 After reading the SAS file and creating our DataFrame, we note that the BRFSS data is not useful right out of the box. We have to do some heavy-duty cleaning.  The 2021 data set includes 438693 rows and 303 columns.  
 
-# Feature Engineering										
+#### Feature Engineering										
 Producing accurate predictions is the goal of a machine learning algorithm, and feature engineering ties it all together. Feature engineering includes everything from filling in missing values to variable transformation to building new variables from existing ones.
 
 A review of the data shows a significant number of null values in several columns.  The reality is that real-world data is rarely clean and homogeneous. In particular, many interesting datasets will have some amount of data missing.  The first part of feature engineering is handling missing values.
@@ -45,12 +45,43 @@ MAR(Missing At Random): Missing at Random means the propensity for a data point 
 
 Our missing values are of the MCAR type, which is typical of survey results.  Random Sample Imputation is used when data are MCAR. In this technique, NaN values are replaced by a random value (ie. mean, median, mode) selected from that column.  The advantages of using Random Sample imputation include that it is easy to implement and there is less resulting distortion in variance.  The main disadvantage is that there may be some situations randomness won't work.  However, in the case of our dataset, it is likely the most appropriate option. A common method of random sample imputation with numeric features is to replace missing values with the median of the feature’s non-missing values. 
 
-# Link to Tableau to further show the relationship between Diabetes and the features
+We eliminated data where the survey had only partially completed, thus eliminating a source of bias in our data. We then cleaned our dataset to ensure that our data was consistent.  For example, we removed data where the the individual was unresponsive to the question being asked.  Our data was largely binary, with some ordinal features.  In some cases the binary classes were inconsistent, so we updated the classifiers to ensure they were consistent.  We then renamed the columns to make them more readable.  Finally, we exported the final DataFrame to a CSV file to conduct the remainder of our Feature Engineering.
 
-https://public.tableau.com/app/profile/mojtaba.zadaskar/viz/shared/W3CCWYNDB
+Using established research, we will narrow the available 303 indicators to reflect features that are known indicators for diabetes.  We reduced our dataset from 303 columns to 27, focussing on the following indicators: 
+<img width="560" alt="Screenshot 2023-04-16 at 7 44 45 PM" src="https://user-images.githubusercontent.com/115101031/232350068-e251a2c4-15d8-4268-ab4c-ca45cc7bf89c.png">
+
+
+#### Feature Selection
+After reading in our CSV file, we visualized distribution plots for each our our features.  Visualization of the distribution/density of each variable in our dataset provides a clear way to understand the balance of our data.  For example, the accuracy of our predictions may be skewed simply if the model is making predictions on the largest class in our dataset.  This may dictate which model optimizers would be best suited to our dataset, as well as whether we want to employ any resampling strategies.
+<img width="583" alt="Screenshot 2023-04-16 at 7 47 44 PM" src="https://user-images.githubusercontent.com/115101031/232350362-d717a307-1d4d-4b59-abb6-41558d52fc5a.png">
+
+Our goal was to define those features which would work best in training our models and improving our ability to predict whether an individual had diabetes or not.
+
+***Univariate Selection*** - Statistical tests can be used to select those features that have the strongest relationship with the output variable. The scikit-learn library provides the SelectKBest class that can be used with a suite of different statistical tests to select a specific number of features. Using the chi-squared (chi²) statistical test for non-negative features to select 10 of the best features gives us a good sense of which features may provide the strongest predictive outcome.
+<img width="250" alt="Screenshot 2023-04-16 at 7 51 57 PM" src="https://user-images.githubusercontent.com/115101031/232350528-0c8e52a2-84d0-4d4e-941b-a74d34f3d938.png">
+
+***Feature Importance*** - You can get the feature importance of each feature of your dataset by using the feature importance property of the model. Feature importance gives you a score for each feature of your data, the higher the score more important or relevant the feature is to your output variable. Feature importance is an inbuilt class that comes with Tree-Based Classifiers, we will be using Extra Tree Classifier for extracting the top 10 features for the dataset.
+<img width="553" alt="Screenshot 2023-04-16 at 7 53 04 PM" src="https://user-images.githubusercontent.com/115101031/232350589-c0935f42-9d2b-4ddd-93d2-8b8adedc1c88.png">
+
+***Correlation Matrix with Heatmap*** - Correlation states how the features are related to each other or the target variable. Correlation can be positive (an increase in one value of a feature increases the value of the target variable) or negative (an increase in one value of the feature decreases the value of the target variable).  Heatmap makes it easy to identify which features are most related to the target variable, we will plot a heatmap of correlated features using the Seaborn library.
+<img width="582" alt="Screenshot 2023-04-16 at 7 54 02 PM" src="https://user-images.githubusercontent.com/115101031/232350660-5df4f5c0-bea4-461d-96cb-9d648c3ddc1f.png">
+
+***Recursive Feature Elimination*** - Recursive Feature Elimination (or RFE) works by recursively removing attributes and building a model on those attributes that remain. It uses the model accuracy to identify which attributes (and combination of attributes) contribute the most to predicting the target attribute. You can learn more about the RFE class in the scikit-learn documentation. The example below uses RFE with the logistic regression algorithm to select the top 3 features. The choice of algorithm does not matter too much as long as it is skillful and consistent.  Recursive Feature Elimination fits a model that starts with all the input variables, then iteratively removes those with the weakest relationship with the output until the desired number of features is reached. It actually fits a model instead of just running statistical tests, unlike Univariate Testing. RFE is popular because it is easy to configure and use and because it is effective at selecting those features in a training dataset that are more or most relevant in predicting the target variable. 
+
+***Recursive Feature Elimination with Cross-Validation (RFECV)*** -  The CV in RFECV means Cross-Validation. It gives you a better understanding of what variables will be included in your model. The Cross-Validation part splits the data into different chunks and iteratively trains and validates models on each chunk separately. This simply means that each time you assess different models with certain variables included or eliminated, the algorithm also knows how accurate each model was from the model scenarios that are created and can determine which provided the best accuracy and concludes the best set of input variables to use.
+<img width="504" alt="Screenshot 2023-04-16 at 7 58 24 PM" src="https://user-images.githubusercontent.com/115101031/232350938-bf2631af-b97f-45d5-9c7d-d7304b3faf28.png">
+
+***Principal Component Analysis*** - Principal Component Analysis (or PCA) uses linear algebra to transform the dataset into a compressed form. Generally, this is called a data reduction technique. A property of PCA is that you can choose the number of dimensions or principal components in the transformed result. In the example below, we use PCA and select 2 principal components. 
+
+***Ridge Regression*** - One of the most important things about ridge regression is that without wasting any information about predictions, it tries to determine variables with zero effects. Ridge regression is popular because it uses regularization for making predictions, and regularization is intended to resolve the problem of overfitting. Ridge regression can also help us in feature selection to find out the important features required for modelling purposes.  We can consider ridge regression as a way or method to estimate the coefficient of multiple regression models.  We mainly find the requirement of ridge regression where variables in data are highly correlated. We can also think of ridge regression as a possible solution to the imprecision of LSE(least square estimator) where the independent variables of any linear regression model are highly correlated.
 
 # Machine Learning
 
+
+
+# Link to Tableau to further show the relationship between Diabetes and the features
+
+https://public.tableau.com/app/profile/mojtaba.zadaskar/viz/shared/W3CCWYNDB
 
 # Link to the Project Presentation PowerPoint
 
