@@ -3,9 +3,13 @@
 <img width="632" alt="Screenshot 2023-04-13 at 7 03 57 PM" src="https://user-images.githubusercontent.com/106120403/231901475-2b87a3eb-d90d-414c-8e99-1ed37a0095bf.png">
 
 # Introduction											
-Every year since 1984, the CDC has conducted a detailed survey on people’s health and what they're doing about it. The CDC's Behavioral Risk Factor Surveillance System (BRFSS) provides a wealth of information about health and health-related behaviours in the United States. It is the largest and longest-running health survey system in the world, and in its current incarnation, it covers over 400,000 adult interviews from all 50 states, the District of Columbia, and three territories. For more information about the survey itself, you can visit the CDC BRFSS site.
+As one of the most common diseases in the world, diabetes mellitus affects 37.3 million Americans in 2019 or 11.3% of the country’s population. The proportion of diabetes-related deaths in the US is estimated to be between 11.5% and 12%. Diabetes was diagnosed in 537 million individuals globally in 2021; by 2045, that figure is projected to rise to 783 million. Diabetes also has a significant economic impact, with estimated annual expenditures for direct costs relating to diabetes increasing from $966 billion in 2021 to a projected value in excess of over $1 trillion in 2045. In the US, spending on diabetes care and management makes up roughly 25% of all healthcare spending. The effective management of diabetes is crucial to prevent additional complications, such as eye, foot, and mouth problems, kidney disease and even certain cancers. Additionally, it is also estimated that half of all people affected by diabetes are undiagnosed. Like other diseases, one of the best ways to effectively manage diabetes lies in diagnosing the disease early before the effects become more serious.{1}
 
-The BRFSS is a rich source of information on how demographics, behaviours, and other risk factors can correlate with health. Many important population health studies and measures use the BRFSS as a key data source. For example, it is the source of the CDC's "Healthy Days" measurement, a key performance metric for the healthcare industry.
+Diabetes is usually diagnosed in one of two ways – in the more traditional way involving manual diagnosis by health practitioners – or by technology. Each of these methods has distinct advantages and disadvantages. While it is true that manual diagnosis by health practitioners allows for human expert insight, advances in technology have made this approach much more effective as time goes on and is becoming the preferred approach. Another advantage of technological approaches is that they require less time and resources to employ. Additionally, in the initial stages of the disease, indicators of diabetes can be easier to identify through technology than by manual examinations while eliminating human errors and complications in the initial analysis stages. As the availability of electronic health record data continues to increase, it becomes more attractive to utilize automated diabetes diagnosis systems. In particular, artificial intelligence (AI) and machine learning (ML) approaches are the two main ways automated diabetes diagnosis systems can be built.{1}
+
+Every year since 1984, the CDC has conducted a detailed survey on people’s health and what they're doing about it. The CDC's Behavioral Risk Factor Surveillance System (BRFSS) provides a wealth of information about health and health-related behaviours in the United States. It is the largest and longest-running health survey system in the world, and in its current incarnation, it covers over 400,000 adult interviews from all 50 states, the District of Columbia, and three territories. For more information about the survey itself, you can visit the CDC BRFSS site.{2}
+
+The BRFSS is a rich source of information on how demographics, behaviours, and other risk factors can correlate with health. Many important population health studies and measures use the BRFSS as a key data source. For example, it is the source of the CDC's "Healthy Days" measurement, a key performance metric for the healthcare industry.{2}
 
 Unfortunately, BRFSS data isn't exactly easy to deal with. Its breadth and structure have changed considerably over the years, and there are important sampling considerations that must be taken into account when using the data to draw conclusions. 
 
@@ -92,8 +96,8 @@ Our goal was to define those features which would work best in training our mode
 * https://tanya-qader.github.io/diabetes_page/
 
 ***Knowledgebase - Additional Sources***
-* https://www.cdc.gov/pcd/issues/2019/19_0109.htm
-* https://www.sciencedirect.com/science/article/pii/S2772442522000582#da1
+* https://www.cdc.gov/pcd/issues/2019/19_0109.htm {2}
+* https://www.sciencedirect.com/science/article/pii/S2772442522000582#da1 {1}
 * https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9018179/
 * https://www.researchgate.net/publication/366621858_Risk_Factor_Analysis_Associated_with_BRFSS_dataset
 * https://www.sciencedirect.com/topics/engineering/confusion-matrix#:~:text=A%20confusion%20matrix%20is%20a,malignant%20tissue%20is%20considered%20cancerous
