@@ -92,11 +92,15 @@ This was confirmed by also reviewing the skewness of our data (df.skew).  As suc
 <img width="436" alt="Screenshot 2023-04-16 at 8 30 22 PM" src="https://user-images.githubusercontent.com/115101031/232352866-ebd1a015-d2ec-4a1d-8dce-6dc708c51b28.png">
 
 ***StandardScaler*** is a fast and specialized algorithm for scaling data. It calculates the mean and standard deviation of the data set and normalizes it by subtracting the mean and dividing by standard deviation. Using StandardScaler is a common practice in ML projects if the data set follows a normal distribution.  
+
 ***MinMaxScaler*** is a simple and effective linear scaling function. It scales the data set between 0 and 1. In other words, the minimum and maximum values in the scaled data set are 0 and 1 respectively. MinMax Scaler is often used as an alternative to Standard Scaler if zero mean and unit variance want to be avoided. 
+
 ***RobustScaler*** is a technique that uses median and quartiles to tackle the biases rooting from outliers. Instead of removing mean, RobustScaler removes median and scales the data according to the quantile range aka IQR: Interquartile Range.
 
 A comparison of all three scalers with a copy of our DataFrame, swayed the choice towards the MinMaxScaler as it will likely best address a dataset that is not normally distributed/skewed.
+
 <img width="217" alt="Screenshot 2023-04-16 at 8 30 32 PM" src="https://user-images.githubusercontent.com/115101031/232352874-e9ca8683-25a6-4334-80b7-4e36c148bae3.png">
+
 
 We initiated our maching learning with Logistic Regression, Decision Tree, KNN and Random Forest.
 
