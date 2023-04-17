@@ -177,9 +177,27 @@ Random Forest provides a consistent result with earlier models, but does offer a
  # Dashboard 
  #### streamLit
       
-      Used stream lit to create a dashboard , with the use of ML and based on the questions that the client will respond , the system could predict is he/she 
-      diabetes or no diabetes, the system has the capabilty to be expand in more details.
+      Used stream lit to create a dashboard , with the use of ML and based on the questions that the client will respond ,
+      the system could predict, is he/she diabetes or no diabetes.
 
+   First screenshot:
+<img width="600" alt="Drink Vs Diabetes" src="https://github.com/Tanya-Qader/Diabetes_Prediction/blob/Mojtaba/Images/dashboard%20picture.PNG">
+
+   Second screenshot:
+<img width="600" alt="Drink Vs Diabetes" src="https://github.com/Tanya-Qader/Diabetes_Prediction/blob/Mojtaba/Images/dashboard%20picture2.PNG">
+
+    Third screenshot:
+<img width="600" alt="Drink Vs Diabetes" src="https://github.com/Tanya-Qader/Diabetes_Prediction/blob/Mojtaba/Images/dashboard%20picture3.PNG">
+
+
+    Fourth screenshot:
+<img width="600" alt="Drink Vs Diabetes" src="https://github.com/Tanya-Qader/Diabetes_Prediction/blob/Mojtaba/Images/dashboard%20picture4.PNG">
+
+
+    Fifth  screenshot:
+<img width="600" alt="Drink Vs Diabetes" src="https://github.com/Tanya-Qader/Diabetes_Prediction/blob/Mojtaba/Images/dashboard%20picture5.PNG">
+
+   
 # Additional Supporting Content
 
 ***Link to Tableau to further show the relationship between Diabetes and the features***
