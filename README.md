@@ -79,16 +79,16 @@ Our goal was to define those features which would work best in training our mode
 
 
 
-# Link to Tableau to further show the relationship between Diabetes and the features
 
+# Links to Additional Supporting Content
+
+#### Link to Tableau to further show the relationship between Diabetes and the features
 https://public.tableau.com/app/profile/mojtaba.zadaskar/viz/shared/W3CCWYNDB
 
-# Link to the Project Presentation PowerPoint
-
+#### Link to the Project Presentation PowerPoint
 https://docs.google.com/presentation/d/1f4IErv21VkdBfn4Hmy-l7u7yjIzmLlKGUOm07Lc417k/edit#slide=id.g11d335f8426_1_172
 
-# Link to the Dashboard
-
+#### Link to the Dashboard
 https://tanya-qader.github.io/diabetes_page/
 
 
