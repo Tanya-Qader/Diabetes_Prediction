@@ -114,8 +114,21 @@ While the precision, recall and f1-score are high for healthy individuals, those
 
 ***K Nearest Neighbors***: The k-nearest neighbors algorithm, also known as KNN or k-NN, is a non-parametric, supervised learning classifier, which uses proximity to make classifications or predictions about the grouping of an individual data point.
 
+<img width="424" alt="Screenshot 2023-04-16 at 9 17 58 PM" src="https://user-images.githubusercontent.com/115101031/232356367-18755260-cbda-4379-9076-fac48118c72d.png">
 
+KNN did not provide improvement in our accuracy or prediction of diabetes.  In fact, it did worse in generating significantly more false negatives (6803)!
 
+***Decision Tree***: A decision tree can be used to visually and explicitly represent decisions and decision making. As the name goes, it uses a tree-like model of decisions. It makes predictions based on how a previous set of questions were answered.
+
+<img width="419" alt="Screenshot 2023-04-16 at 9 19 33 PM" src="https://user-images.githubusercontent.com/115101031/232356515-48c26e28-9be4-4c1c-9a77-6beaa07f23fd.png">
+
+Our accuracy, precision, recall and f1-score are consistent with the prior models.  While precision and recall and f1-scores are better at predicting diabetes, the high number of false negatives is still abysmally high.
+
+***Random Forest***: One of the most popular and commonly used algorithms by Data Scientists. Random forest is a Supervised Machine Learning Algorithm that is used widely in Classification and Regression problems. It builds decision trees on different samples and takes their majority vote for classification and average in case of regression. One of the most important features of the Random Forest Algorithm is that it can handle the data set containing continuous variables, as in the case of regression, and categorical variables, as in the case of classification. It performs better for classification and regression tasks. In this tutorial, we will understand the working of random forest and implement random forest on a classification task.
+
+<img width="422" alt="Screenshot 2023-04-16 at 10 52 58 PM" src="https://user-images.githubusercontent.com/115101031/232367412-79668a4d-1e77-49da-b779-b64687ce2d03.png">
+
+Random Forest provides a consistent result with earlier models, but does offer a slightly improved/reduced false negatives.
 
 
 # Additional Supporting Content
