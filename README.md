@@ -65,6 +65,7 @@ Our goal was to define those features which would work best in training our mode
 <img width="250" alt="Screenshot 2023-04-16 at 7 51 57 PM" src="https://user-images.githubusercontent.com/115101031/232350528-0c8e52a2-84d0-4d4e-941b-a74d34f3d938.png">
 
 ***Feature Importance*** - You can get the feature importance of each feature of your dataset by using the feature importance property of the model. Feature importance gives you a score for each feature of your data, the higher the score more important or relevant the feature is to your output variable. Feature importance is an inbuilt class that comes with Tree-Based Classifiers, we will be using Extra Tree Classifier for extracting the top 10 features for the dataset.
+
 <img width="553" alt="Screenshot 2023-04-16 at 7 53 04 PM" src="https://user-images.githubusercontent.com/115101031/232350589-c0935f42-9d2b-4ddd-93d2-8b8adedc1c88.png">
 
 ***Correlation Matrix with Heatmap*** - Correlation states how the features are related to each other or the target variable. Correlation can be positive (an increase in one value of a feature increases the value of the target variable) or negative (an increase in one value of the feature decreases the value of the target variable).  Heatmap makes it easy to identify which features are most related to the target variable, we will plot a heatmap of correlated features using the Seaborn library.
@@ -102,7 +103,7 @@ A comparison of all three scalers with a copy of our DataFrame, swayed the choic
 <img width="217" alt="Screenshot 2023-04-16 at 8 30 32 PM" src="https://user-images.githubusercontent.com/115101031/232352874-e9ca8683-25a6-4334-80b7-4e36c148bae3.png">
 
 
-We initiated our maching learning with Logistic Regression, Decision Tree, KNN and Random Forest.
+We initiated our machine learning with Logistic Regression, Decision Tree, KNN and Random Forest.
 
 ***Logistic Regression***: Logistic regression is an example of supervised learning. It is used to calculate or predict the probability of a binary (yes/no) event occurring.
 
