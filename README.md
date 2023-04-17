@@ -62,6 +62,7 @@ After reading in our CSV file, we visualized distribution plots for each our our
 Our goal was to define those features which would work best in training our models and improving our ability to predict whether an individual had diabetes or not.
 
 ***Univariate Selection*** - Statistical tests can be used to select those features that have the strongest relationship with the output variable. The scikit-learn library provides the SelectKBest class that can be used with a suite of different statistical tests to select a specific number of features. Using the chi-squared (chi²) statistical test for non-negative features to select 10 of the best features gives us a good sense of which features may provide the strongest predictive outcome.
+
 <img width="250" alt="Screenshot 2023-04-16 at 7 51 57 PM" src="https://user-images.githubusercontent.com/115101031/232350528-0c8e52a2-84d0-4d4e-941b-a74d34f3d938.png">
 
 ***Feature Importance*** - You can get the feature importance of each feature of your dataset by using the feature importance property of the model. Feature importance gives you a score for each feature of your data, the higher the score more important or relevant the feature is to your output variable. Feature importance is an inbuilt class that comes with Tree-Based Classifiers, we will be using Extra Tree Classifier for extracting the top 10 features for the dataset.
@@ -69,11 +70,13 @@ Our goal was to define those features which would work best in training our mode
 <img width="553" alt="Screenshot 2023-04-16 at 7 53 04 PM" src="https://user-images.githubusercontent.com/115101031/232350589-c0935f42-9d2b-4ddd-93d2-8b8adedc1c88.png">
 
 ***Correlation Matrix with Heatmap*** - Correlation states how the features are related to each other or the target variable. Correlation can be positive (an increase in one value of a feature increases the value of the target variable) or negative (an increase in one value of the feature decreases the value of the target variable).  Heatmap makes it easy to identify which features are most related to the target variable, we will plot a heatmap of correlated features using the Seaborn library.
+
 <img width="582" alt="Screenshot 2023-04-16 at 7 54 02 PM" src="https://user-images.githubusercontent.com/115101031/232350660-5df4f5c0-bea4-461d-96cb-9d648c3ddc1f.png">
 
 ***Recursive Feature Elimination*** - Recursive Feature Elimination (or RFE) works by recursively removing attributes and building a model on those attributes that remain. It uses the model accuracy to identify which attributes (and combination of attributes) contribute the most to predicting the target attribute. You can learn more about the RFE class in the scikit-learn documentation. The example below uses RFE with the logistic regression algorithm to select the top 3 features. The choice of algorithm does not matter too much as long as it is skillful and consistent.  Recursive Feature Elimination fits a model that starts with all the input variables, then iteratively removes those with the weakest relationship with the output until the desired number of features is reached. It actually fits a model instead of just running statistical tests, unlike Univariate Testing. RFE is popular because it is easy to configure and use and because it is effective at selecting those features in a training dataset that are more or most relevant in predicting the target variable. 
 
 ***Recursive Feature Elimination with Cross-Validation (RFECV)*** -  The CV in RFECV means Cross-Validation. It gives you a better understanding of what variables will be included in your model. The Cross-Validation part splits the data into different chunks and iteratively trains and validates models on each chunk separately. This simply means that each time you assess different models with certain variables included or eliminated, the algorithm also knows how accurate each model was from the model scenarios that are created and can determine which provided the best accuracy and concludes the best set of input variables to use.
+
 <img width="504" alt="Screenshot 2023-04-16 at 7 58 24 PM" src="https://user-images.githubusercontent.com/115101031/232350938-bf2631af-b97f-45d5-9c7d-d7304b3faf28.png">
 
 ***Principal Component Analysis*** - Principal Component Analysis (or PCA) uses linear algebra to transform the dataset into a compressed form. Generally, this is called a data reduction technique. A property of PCA is that you can choose the number of dimensions or principal components in the transformed result. In the example below, we use PCA and select 2 principal components. 
@@ -88,15 +91,15 @@ After reading in our CSV file, we set about exploring our dataset before laungch
 Reviewing histograms of each feature showed that the data was not normally distributed.
 <img width="803" alt="Screenshot 2023-04-16 at 8 24 46 PM" src="https://user-images.githubusercontent.com/115101031/232352563-39e0cff8-c0b0-4674-a3d7-56be29478964.png">
 
-This was confirmed by also reviewing the skewness of our data (df.skew).  As such, we needed to consider options to scale our data prior to runnung our maching learning models.  Data scaling is a method for reducing the effect of data bias on predictions which is highly used in pre-processing step in any Machine Learning project. It can be applied to any type of prediction model.  We focussed our options on three of the most popular scalers:
-
-<img width="436" alt="Screenshot 2023-04-16 at 8 30 22 PM" src="https://user-images.githubusercontent.com/115101031/232352866-ebd1a015-d2ec-4a1d-8dce-6dc708c51b28.png">
+This was confirmed by also reviewing the skewness of our data (df.skew).  As such, we needed to consider options to scale our data prior to runnung our maching learning models.  Data scaling is a method for reducing the effect of data bias on predictions which is highly used in pre-processing step in any Machine Learning project. It can be applied to any type of prediction model.  We focussed our options on three of the most popular scalers.
 
 ***StandardScaler*** is a fast and specialized algorithm for scaling data. It calculates the mean and standard deviation of the data set and normalizes it by subtracting the mean and dividing by standard deviation. Using StandardScaler is a common practice in ML projects if the data set follows a normal distribution.  
 
 ***MinMaxScaler*** is a simple and effective linear scaling function. It scales the data set between 0 and 1. In other words, the minimum and maximum values in the scaled data set are 0 and 1 respectively. MinMax Scaler is often used as an alternative to Standard Scaler if zero mean and unit variance want to be avoided. 
 
 ***RobustScaler*** is a technique that uses median and quartiles to tackle the biases rooting from outliers. Instead of removing mean, RobustScaler removes median and scales the data according to the quantile range aka IQR: Interquartile Range.
+
+<img width="436" alt="Screenshot 2023-04-16 at 8 30 22 PM" src="https://user-images.githubusercontent.com/115101031/232352866-ebd1a015-d2ec-4a1d-8dce-6dc708c51b28.png">
 
 A comparison of all three scalers with a copy of our DataFrame, swayed the choice towards the MinMaxScaler as it will likely best address a dataset that is not normally distributed/skewed.
 
