@@ -221,7 +221,7 @@ The dashboard allows users to input data such as race/ethnicity, physical activi
 * https://docs.google.com/presentation/d/1f4IErv21VkdBfn4Hmy-l7u7yjIzmLlKGUOm07Lc417k/edit#slide=id.g11d335f8426_1_172
 
 ***Link to the Dashboard***
-Since we didnt publish this app publicly, this link will only open if the local machine with the local port number is connected to run this app. 
+* Since we didnt publish this app publicly, this link will only open if the local machine with the local port number is connected to run this app. 
 
 * https://tanya-qader.github.io/diabetes_page/
 
