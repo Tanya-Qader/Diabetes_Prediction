@@ -26,7 +26,9 @@ The goal of this project is to demonstrate how to use BRFSS data and some of the
 In today’s world, it is important to understand your overall health and be able to make predictions about health issues such as diabetes, high blood pressure, and cholesterol levels. We will be using Machine Learning to predict whether an individual has diabetes or not have diabetes. We will use information such as the person’s age, BMI, activity levels etc.
 
 ### Dataset
-https://www.cdc.gov/brfss/annual_data/annual_2021.html
+In 1984, the Centers for Disease Control and Prevention (CDC) initiated the state-based Behavioral Risk Factor Surveillance System (BRFSS) a cross-sectional telephone survey that state health departments conduct monthly over landline telephones and cellular telephones with a standardized questionnaire and technical and methodologic assistance from CDC. BRFSS is used to collect prevalence data among adult U.S. residents regarding their risk behaviors and preventive health practices that can affect their health status. Respondent data are forwarded to CDC to be aggregated for each state, returned with standard tabulations, and published at year’s end by each state. In 2011, more than 500,000 interviews were conducted in the states, the District of Columbia, and participating U.S. territories and other geographic areas.
+
+2021 BRFSS Dataset: https://www.cdc.gov/brfss/annual_data/annual_2021.html
 
 ### Research Questions:
 
@@ -204,14 +206,17 @@ The dashboard allows users to input data such as race/ethnicity, physical activi
 
 ## Conclusions:
 
-* Our dataset is subjective and compromises an extensive set of features and not necessarily all related to our project scope while it provided a sgood dataset to work with, we recognzed that working with scientific data or standardized medical records/data would provide a stronger dataset for us to predict diabetes using machine learning. 
+* Our dataset is subjective and compromises an extensive set of features, not all necessarily related to our project scope.  Based on surveys, the dataset reflects individuals perceptions, recollections, and often their reluctance to share personal informaiton.  While it provided a good dataset to work with, we recognzed that if we were to tackle the project in real-life, working with scientific data or standardized medical records/data would provide a more reliable and consistent dataset for us to predict diabetes using machine learning. This would also mean that instead of relying on a all-emcompassing dataset that may or may not include data relevant to predicting diabetes, a standardized dataset using medical records and professional diagnistics from health professionals, would ensure that our data reflected current medical guidelines for assessment of diabetes.
 
-* Having more medical records could help us use the same machine learning model to predict other health issues not necessarily related to diabetes.
+* What was interesting in using our dataset was the way in which we could visualize a correlation between other heath issues.  For example, find that a High BP correlated to heart conditions.  Or a lack of activity correlating to difficulty walking.  We were also surprised by the correlation between income and a diabetes diagnosis, which made us think about factors that might impact a person's likelihood to be diagnosed that were not directly medical in nature.
 
-* Our dashboard is created by streamlit and this dashboard provides a quick and easy way to predict the likelihood of a person having diabetes based on several key factors. By using logistic regression, we can achieve a high degree of accuracy in our predictions. Overall, this tool can be very useful in the healthcare industry and can potentially help identify individuals who are at risk for diabetes. However, in our case the streamlit app is not publicly published, therefore the dashboard will only open if the local port is connected. In order to publish the app, we need a web hosting or AWS to host the web and make is accessible for everyone. 
+* A key focus in our project was in understanding the nature of our data and the type of tools that would suit our analysis.  For example, understanding that our dataset was not normally distributed helped us make decisions about which feature engineering tools to use.  Equally, understanding that our dataset had a high number of null values or non-responses pushed us to carefully consider how we might treat these variables so that we did not eliminate large swathes of useful data, or that we did not unnecessarily bias our results.  Working with binary and ordinal data also informed our choices when scaling our dataset and our decisions around which machine learning models might works best.
 
+* Our dashboard is created by _Streamlit_ which provided a useful and interactive means to combine our machine learning with user input to test the likelihood of a person having diabetes based on several key factors. By using logistic regression, we can achieve a high degree of accuracy in our predictions. Overall, this tool can be very useful in the healthcare industry and can potentially help identify individuals who are at risk for diabetes. However, in our case the streamlit app is not publicly published, therefore the dashboard will only open if the local port is connected. In order to publish the app, we need a web hosting or AWS to host the web and make is accessible for everyone. 
 
-   
+* We were able to see the high value that machine learning and interactive tools like a dashboard can offer both the patient and health professionals in both diagnosing, but also recommending preventative and disease management care.
+
+  
 # Additional Supporting Content
 
 ***Link to Tableau to further show the relationship between Diabetes and the features***
