@@ -198,11 +198,17 @@ Random Forest provides a consistent result with earlier models, but does offer a
 <img width="600" alt="Drink Vs Diabetes" src="https://github.com/Tanya-Qader/Diabetes_Prediction/blob/Mojtaba/Images/dashboard%20picture5.PNG">
 
 
+
+The dashboard allows users to input data such as race/ethnicity, physical activity, high blood pressure, gender, age, income,smoker, and whether the person is overweight or obese. Based on this input, the model predicts the likelihood of the person having diabetes, which is then displayed on the dashboard.
+
+
 ## Conclusions:
 
 * Our dataset is subjective and compromises an extensive set of features and not necessarily all related to our project scope while it provided a sgood dataset to work with, we recognzed that working with scientific data or standardized medical records/data would provide a stronger dataset for us to predict diabetes using machine learning. 
 
 * Having more medical records could help us use the same machine learning model to predict other health issues not necessarily related to diabetes.
+
+* Our dashboard is created by streamlit and this dashboard provides a quick and easy way to predict the likelihood of a person having diabetes based on several key factors. By using logistic regression, we can achieve a high degree of accuracy in our predictions. Overall, this tool can be very useful in the healthcare industry and can potentially help identify individuals who are at risk for diabetes. However, in our case the streamlit app is not publicly published, therefore the dashboard will only open if the local port is connected. In order to publish the app, we need a web hosting or AWS to host the web and make is accessible for everyone. 
 
 
    
@@ -215,6 +221,8 @@ Random Forest provides a consistent result with earlier models, but does offer a
 * https://docs.google.com/presentation/d/1f4IErv21VkdBfn4Hmy-l7u7yjIzmLlKGUOm07Lc417k/edit#slide=id.g11d335f8426_1_172
 
 ***Link to the Dashboard***
+Since we didnt publish this app publicly, this link will only open if the local machine with the local port number is connected to run this app. 
+
 * https://tanya-qader.github.io/diabetes_page/
 
 ***Knowledgebase - Additional Sources***
