@@ -63,7 +63,7 @@ Our missing values are of the MCAR type, which is typical of survey results.  Ra
 
 We eliminated data where the survey had only partially completed, thus eliminating a source of bias in our data. We then cleaned our dataset to ensure that our data was consistent.  For example, we removed data where the the individual was unresponsive to the question being asked.  Our data was largely binary, with some ordinal features.  In some cases the binary classes were inconsistent, so we updated the classifiers to ensure they were consistent.  We then renamed the columns to make them more readable.  Finally, we exported the final DataFrame to a CSV file to conduct the remainder of our Feature Engineering.
 
-Using established research, we will narrow the available 303 indicators to reflect features that are known indicators for diabetes.  We reduced our dataset from 303 columns to 27, focussing on the following indicators: 
+Using established sientific research and studies, we narrowed the available 303 indicators to reflect features that are known indicators for diabetes.  We reduced our dataset from 303 columns to 27, focussing on the following indicators: 
 <img width="560" alt="Screenshot 2023-04-16 at 7 44 45 PM" src="https://user-images.githubusercontent.com/115101031/232350068-e251a2c4-15d8-4268-ab4c-ca45cc7bf89c.png">
 
 
@@ -206,7 +206,13 @@ Random Forest provides a consistent result with earlier models, but does offer a
 The dashboard allows users to input data such as race/ethnicity, physical activity, high blood pressure, gender, age, income,smoker, and whether the person is overweight or obese. Based on this input, the model predicts the likelihood of the person having diabetes, which is then displayed on the dashboard.
 
 
-## Conclusions:
+# Limitation & Challenges...Opportunities for Future Analysis & Learning
+
+* The project highlighted both the opportunities and challenges of working with the right data!  While the dataset used for the project was imformative, it was not use-specific.  As the results of a survey it was subjective and was multi-purpose.  A great deal of time was spent on cleaning it and analyzing it using feature engineering and selection.  The end result proved promising.  The limitations of time prevented further work but this also offers opportunities to keep building on the project.  For example, our dataset is imbalanced, which can influence our machine learning algorithms, and atrribute weight to features that might not, in fact, be good predictors.  In these cases, the machine learning favours the majority cases (overfitting).  Furture work on this project will focus on analyzing approached to resampling the data.  Likely a combination of oversampling and undersampling the data would be ideal for a dataset that has implications for people's health (https://towardsdatascience.com/oversampling-and-undersampling-5e2bbaf56dcf).
+
+* Though we did some initial deep learning neural network testing, time limitations prevented us from spending more time on this in our final analysis.  Future work can focus looking at a comparison of unsupervised, supervised, and deep learning models.
+
+# Conclusions:
 
 * Our dataset is subjective and compromises an extensive set of features, not all necessarily related to our project scope.  Based on surveys, the dataset reflects individuals perceptions, recollections, and often their reluctance to share personal informaiton.  While it provided a good dataset to work with, we recognzed that if we were to tackle the project in real-life, working with scientific data or standardized medical records/data would provide a more reliable and consistent dataset for us to predict diabetes using machine learning. This would also mean that instead of relying on a all-emcompassing dataset that may or may not include data relevant to predicting diabetes, a standardized dataset using medical records and professional diagnistics from health professionals, would ensure that our data reflected current medical guidelines for assessment of diabetes.
 
