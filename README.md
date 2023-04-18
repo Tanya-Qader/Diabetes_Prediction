@@ -197,6 +197,14 @@ Random Forest provides a consistent result with earlier models, but does offer a
     Fifth  screenshot:
 <img width="600" alt="Drink Vs Diabetes" src="https://github.com/Tanya-Qader/Diabetes_Prediction/blob/Mojtaba/Images/dashboard%20picture5.PNG">
 
+
+## Conclusions:
+
+* Our dataset is subjective and compromises an extensive set of features and not necessarily all related to our project scope while it provided a sgood dataset to work with, we recognzed that working with scientific data or standardized medical records/data would provide a stronger dataset for us to predict diabetes using machine learning. 
+
+* Having more medical records could help us use the same machine learning model to predict other health issues not necessarily related to diabetes.
+
+
    
 # Additional Supporting Content
 
