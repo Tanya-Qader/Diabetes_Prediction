@@ -64,6 +64,7 @@ Our missing values are of the MCAR type, which is typical of survey results.  Ra
 We eliminated data where the survey had only partially completed, thus eliminating a source of bias in our data. We then cleaned our dataset to ensure that our data was consistent.  For example, we removed data where the the individual was unresponsive to the question being asked.  Our data was largely binary, with some ordinal features.  In some cases the binary classes were inconsistent, so we updated the classifiers to ensure they were consistent.  We then renamed the columns to make them more readable.  Finally, we exported the final DataFrame to a CSV file to conduct the remainder of our Feature Engineering.
 
 Using established sientific research and studies, we narrowed the available 303 indicators to reflect features that are known indicators for diabetes.  We reduced our dataset from 303 columns to 27, focussing on the following indicators: 
+
 <img width="560" alt="Screenshot 2023-04-16 at 7 44 45 PM" src="https://user-images.githubusercontent.com/115101031/232350068-e251a2c4-15d8-4268-ab4c-ca45cc7bf89c.png">
 
 
