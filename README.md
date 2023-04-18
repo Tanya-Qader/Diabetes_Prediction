@@ -28,6 +28,8 @@ In today’s world, it is important to understand your overall health and be abl
 ### Dataset
 In 1984, the Centers for Disease Control and Prevention (CDC) initiated the state-based Behavioral Risk Factor Surveillance System (BRFSS) a cross-sectional telephone survey that state health departments conduct monthly over landline telephones and cellular telephones with a standardized questionnaire and technical and methodologic assistance from CDC. BRFSS is used to collect prevalence data among adult U.S. residents regarding their risk behaviors and preventive health practices that can affect their health status. Respondent data are forwarded to CDC to be aggregated for each state, returned with standard tabulations, and published at year’s end by each state. In 2011, more than 500,000 interviews were conducted in the states, the District of Columbia, and participating U.S. territories and other geographic areas.
 
+Identifying a suitable dataset is important for constructing an effective classifier. Therefore, to accurately predict diabetes, the dataset was obtained from BRFSS, which provided sufficient data samples and attributes for training purposes.
+
 2021 BRFSS Dataset: https://www.cdc.gov/brfss/annual_data/annual_2021.html
 
 ### Research Questions:
